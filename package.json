@@ -1,10 +1,10 @@
 {
-  "name": "admin-lte",
+  "name": "callcenteride",
   "version": "2.3.3",
   "main": "dist/js/app.min.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/almasaeed2010/AdminLTE.git"
+    "url": ""
   },
   "license": "MIT",
   "devDependencies": {
