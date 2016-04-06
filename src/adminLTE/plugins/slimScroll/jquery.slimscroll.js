@@ -245,7 +245,7 @@
           hideBar();
         });
 
-        if (window.navigator.msPointerEnabled) {          
+        if (window.navigator.msPointerEnabled) {
           // support for mobile
           me.bind('MSPointerDown', function (e, b) {
             if (e.originalEvent.targetTouches.length)
@@ -265,7 +265,7 @@
               // scroll content
               scrollContent(diff, true);
               touchDif = e.originalEvent.targetTouches[0].pageY;
-              
+
             }
           });
         } else {
@@ -402,15 +402,15 @@
 
         function attachWheel()
         {
-          if (window.addEventListener)
-          {
-            this.addEventListener('DOMMouseScroll', _onWheel, false);
-            this.addEventListener('mousewheel', _onWheel, false);
-          }
-          else
-          {
-            document.attachEvent("onmousewheel", _onWheel)
-          }
+          // if (window.addEventListener)
+          // {
+          //   this.addEventListener('DOMMouseScroll', _onWheel, false);
+          //   this.addEventListener('mousewheel', _onWheel, false);
+          // }
+          // else
+          // {
+          //   document.attachEvent("onmousewheel", _onWheel)
+          // }
         }
 
         function getBarHeight()

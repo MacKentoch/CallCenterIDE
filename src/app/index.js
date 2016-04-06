@@ -7,9 +7,8 @@ import 'babel-polyfill';
 import 'animate.css';
 import 'jquery';
 import '../adminLTE/app.min.js';
-import '../adminLTE/plugins/slimScroll/jquery.slimscroll.min.js';
+import '../adminLTE/plugins/slimScroll/jquery.slimscroll.js';
 import 'font-awesome/css/font-awesome.min.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/demoSource/bootstrap/css/bootstrap.css';
 
 import 'bootstrap/dist/js/bootstrap.min.js';
