@@ -16,11 +16,11 @@ import App          from '../containers/app/App.jsx';
 // }                   from '../views/index.js';
 
 import {
-  Dashboard //,
-  // LastFiche,
-  // Compose,
-  // Mailbox,
-  // Readmail
+  Dashboard,
+  Mailbox,
+  LastFiche,
+  Compose,
+  Readmail
 } from '../views';
 
 
@@ -29,7 +29,10 @@ export const Routes = () => {
     <Router history={hashHistory}>
       <Route path="/" component={App}>
         <IndexRoute component={Dashboard} />
-
+        <Route path="/mailbox" component={Mailbox} />
+        <Route path="/compose" component={Compose} />
+        <Route path="/readmail" component={Readmail} />
+        <Route path="/lastfiche" component={LastFiche} />
       </Route>
     </Router>
   );

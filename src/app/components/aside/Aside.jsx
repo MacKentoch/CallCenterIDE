@@ -1,4 +1,5 @@
-import React from 'react';
+import React    from 'react';
+import { Link } from 'react-router';
 
 export const Aside = () => {
   return (
@@ -9,7 +10,9 @@ export const Aside = () => {
             <img src="./public/img/avatar5.png" className="img-circle" alt="User Image" />
           </div>
           <div className="pull-left info">
-            <p>Pierre Paul</p>
+            <p>
+              Pierre Paul
+            </p>
           </div>
         </div>
         <form action="#" method="get" className="sidebar-form">
@@ -22,30 +25,45 @@ export const Aside = () => {
           </div>
         </form>
         <ul className="sidebar-menu">
-          <li className="header">NAVIGATION PRINCIPALE</li>
+          <li className="header">
+            NAVIGATION PRINCIPALE
+          </li>
           <li className="active treeview">
-            <a href="#">
-              <i className="fa fa-dashboard"></i> <span>Tableau de bord</span> <i className="fa fa-angle-left pull-right"></i>
-            </a>
+            <Link to="/">
+              <i className="fa fa-dashboard"></i>
+                <span>
+                  Tableau de bord
+                </span>
+                <i className="fa fa-angle-left pull-right"></i>
+            </Link>
             <ul className="treeview-menu">
-              <li className="active"><a href="index.html"><i className="fa fa-circle-o"></i> Accueil</a></li>
+              <li className="active">
+                <Link to="/">
+                  <i className="fa fa-circle-o"></i>
+                   Accueil
+                </Link>
+              </li>
             </ul>
           </li>
-
           <li>
-            <a href="pages/mailbox/mailbox.html">
-              <i className="fa fa-envelope"></i> <span>Boîte Mail</span>
+            <Link to="/mailbox">
+              <i className="fa fa-envelope"></i>
+               <span>
+                 Boîte Mail
+               </span>
               <small className="label pull-right bg-yellow">12</small>
-            </a>
+            </Link>
           </li>
-          <li className="header">ACCES RAPIDE</li>
+          <li className="header">
+            ACCES RAPIDE
+          </li>
           <li>
-            <a href="pages/examples/invoice.html">
+            <Link to="/lastfiche">
               <i className="fa fa-circle-o"></i>
                 <span>
                   dernière fiche traîtée
-                </span>  
-            </a>
+                </span>
+            </Link>
           </li>
         </ul>
       </section>
