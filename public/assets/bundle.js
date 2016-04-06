@@ -25449,8 +25449,6 @@
 
 	var _ViewFooter = __webpack_require__(228);
 
-	// import TextEditor   from './textEditor/TextEditor.jsx';
-
 	exports.Header = _Header.Header;
 	exports.Aside = _Aside.Aside;
 	exports.ViewHeader = _ViewHeader.ViewHeader;
