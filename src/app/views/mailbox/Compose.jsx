@@ -2,8 +2,7 @@ import React      from 'react';
 import { Link }   from 'react-router';
 import {
   ViewHeader,
-  ViewFooter,
-  TextEditor
+  ViewFooter
 }         from '../../components';
 
 class Compose extends React.Component {
