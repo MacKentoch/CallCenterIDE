@@ -35,11 +35,12 @@ class Mailbox extends React.Component {
                     <div className="box-body no-padding">
                       <ul className="nav nav-pills nav-stacked">
                         <li className="active">
-                          <a href="#">
+                          <Link
+                            to="/mailbox">
                             <i className="fa fa-inbox"></i>
                              Reçus
-                          <span className="label label-primary pull-right">12</span>
-                          </a>
+                             <span className="label label-primary pull-right">12</span>
+                          </Link>
                         </li>
                         <li><a href="#"><i className="fa fa-envelope-o"></i> Envoyés</a></li>
                         <li><a href="#"><i className="fa fa-file-text-o"></i> Brouillons</a></li>
@@ -83,7 +84,12 @@ class Mailbox extends React.Component {
                           <tr>
                             <td><input type="checkbox" /></td>
                             <td className="mailbox-star"><a href="#"><i className="fa fa-star text-yellow"></i></a></td>
-                            <td className="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                            <td className="mailbox-name">
+                              <Link
+                                to="/readmail">
+                                Alexander Pierce
+                              </Link>
+                            </td>
                             <td className="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                             </td>
                             <td className="mailbox-attachment"></td>
@@ -92,7 +98,12 @@ class Mailbox extends React.Component {
                           <tr>
                             <td><input type="checkbox" /></td>
                             <td className="mailbox-star"><a href="#"><i className="fa fa-star-o text-yellow"></i></a></td>
-                            <td className="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                            <td className="mailbox-name">
+                              <Link
+                                to="/readmail">
+                                Alexander Pierce
+                              </Link>
+                            </td>
                             <td className="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                             </td>
                             <td className="mailbox-attachment"><i className="fa fa-paperclip"></i></td>
@@ -101,7 +112,12 @@ class Mailbox extends React.Component {
                           <tr>
                             <td><input type="checkbox" /></td>
                             <td className="mailbox-star"><a href="#"><i className="fa fa-star-o text-yellow"></i></a></td>
-                            <td className="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                            <td className="mailbox-name">
+                              <Link
+                                to="/readmail">
+                                Alexander Pierce
+                              </Link>
+                            </td>
                             <td className="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                             </td>
                             <td className="mailbox-attachment"><i className="fa fa-paperclip"></i></td>
@@ -110,7 +126,12 @@ class Mailbox extends React.Component {
                           <tr>
                             <td><input type="checkbox" /></td>
                             <td className="mailbox-star"><a href="#"><i className="fa fa-star text-yellow"></i></a></td>
-                            <td className="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                            <td className="mailbox-name">
+                              <Link
+                                to="/readmail">
+                                Alexander Pierce
+                              </Link>
+                            </td>
                             <td className="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                             </td>
                             <td className="mailbox-attachment"></td>
@@ -119,7 +140,12 @@ class Mailbox extends React.Component {
                           <tr>
                             <td><input type="checkbox" /></td>
                             <td className="mailbox-star"><a href="#"><i className="fa fa-star text-yellow"></i></a></td>
-                            <td className="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                            <td className="mailbox-name">
+                              <Link
+                                to="/readmail">
+                                Alexander Pierce
+                              </Link>
+                            </td>
                             <td className="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                             </td>
                             <td className="mailbox-attachment"><i className="fa fa-paperclip"></i></td>
@@ -128,7 +154,12 @@ class Mailbox extends React.Component {
                           <tr>
                             <td><input type="checkbox" /></td>
                             <td className="mailbox-star"><a href="#"><i className="fa fa-star-o text-yellow"></i></a></td>
-                            <td className="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                            <td className="mailbox-name">
+                              <Link
+                                to="/readmail">
+                                Alexander Pierce
+                              </Link>
+                            </td>
                             <td className="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                             </td>
                             <td className="mailbox-attachment"><i className="fa fa-paperclip"></i></td>
@@ -137,7 +168,12 @@ class Mailbox extends React.Component {
                           <tr>
                             <td><input type="checkbox" /></td>
                             <td className="mailbox-star"><a href="#"><i className="fa fa-star-o text-yellow"></i></a></td>
-                            <td className="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                            <td className="mailbox-name">
+                              <Link
+                                to="/readmail">
+                                Alexander Pierce
+                              </Link>
+                            </td>
                             <td className="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                             </td>
                             <td className="mailbox-attachment"><i className="fa fa-paperclip"></i></td>
@@ -146,7 +182,12 @@ class Mailbox extends React.Component {
                           <tr>
                             <td><input type="checkbox" /></td>
                             <td className="mailbox-star"><a href="#"><i className="fa fa-star text-yellow"></i></a></td>
-                            <td className="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                            <td className="mailbox-name">
+                              <Link
+                                to="/readmail">
+                                Alexander Pierce
+                              </Link>
+                            </td>
                             <td className="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                             </td>
                             <td className="mailbox-attachment"></td>
@@ -155,7 +196,12 @@ class Mailbox extends React.Component {
                           <tr>
                             <td><input type="checkbox" /></td>
                             <td className="mailbox-star"><a href="#"><i className="fa fa-star text-yellow"></i></a></td>
-                            <td className="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                            <td className="mailbox-name">
+                              <Link
+                                to="/readmail">
+                                Alexander Pierce
+                              </Link>
+                            </td>
                             <td className="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                             </td>
                             <td className="mailbox-attachment"></td>
@@ -164,7 +210,12 @@ class Mailbox extends React.Component {
                           <tr>
                             <td><input type="checkbox" /></td>
                             <td className="mailbox-star"><a href="#"><i className="fa fa-star-o text-yellow"></i></a></td>
-                            <td className="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                            <td className="mailbox-name">
+                              <Link
+                                to="/readmail">
+                                Alexander Pierce
+                              </Link>
+                            </td>
                             <td className="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                             </td>
                             <td className="mailbox-attachment"></td>
@@ -173,7 +224,12 @@ class Mailbox extends React.Component {
                           <tr>
                             <td><input type="checkbox" /></td>
                             <td className="mailbox-star"><a href="#"><i className="fa fa-star-o text-yellow"></i></a></td>
-                            <td className="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                            <td className="mailbox-name">
+                              <Link
+                                to="/readmail">
+                                Alexander Pierce
+                              </Link>
+                            </td>
                             <td className="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                             </td>
                             <td className="mailbox-attachment"><i className="fa fa-paperclip"></i></td>
@@ -182,7 +238,12 @@ class Mailbox extends React.Component {
                           <tr>
                             <td><input type="checkbox" /></td>
                             <td className="mailbox-star"><a href="#"><i className="fa fa-star text-yellow"></i></a></td>
-                            <td className="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                            <td className="mailbox-name">
+                              <Link
+                                to="/readmail">
+                                Alexander Pierce
+                              </Link>
+                            </td>
                             <td className="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                             </td>
                             <td className="mailbox-attachment"></td>
@@ -191,7 +252,12 @@ class Mailbox extends React.Component {
                           <tr>
                             <td><input type="checkbox" /></td>
                             <td className="mailbox-star"><a href="#"><i className="fa fa-star-o text-yellow"></i></a></td>
-                            <td className="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                            <td className="mailbox-name">
+                              <Link
+                                to="/readmail">
+                                Alexander Pierce
+                              </Link>
+                            </td>
                             <td className="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                             </td>
                             <td className="mailbox-attachment"><i className="fa fa-paperclip"></i></td>
@@ -200,20 +266,16 @@ class Mailbox extends React.Component {
                           <tr>
                             <td><input type="checkbox" /></td>
                             <td className="mailbox-star"><a href="#"><i className="fa fa-star text-yellow"></i></a></td>
-                            <td className="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                            <td className="mailbox-name">
+                              <Link
+                                to="/readmail">
+                                Alexander Pierce
+                              </Link>
+                            </td>
                             <td className="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
                             </td>
                             <td className="mailbox-attachment"><i className="fa fa-paperclip"></i></td>
                             <td className="mailbox-date">14 days ago</td>
-                          </tr>
-                          <tr>
-                            <td><input type="checkbox" /></td>
-                            <td className="mailbox-star"><a href="#"><i className="fa fa-star text-yellow"></i></a></td>
-                            <td className="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                            <td className="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
-                            </td>
-                            <td className="mailbox-attachment"><i className="fa fa-paperclip"></i></td>
-                            <td className="mailbox-date">15 days ago</td>
                           </tr>
                           </tbody>
                         </table>

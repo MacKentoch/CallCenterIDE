@@ -63,8 +63,14 @@ class Compose extends React.Component {
                     </div>
                     <div className="box-body no-padding">
                       <ul className="nav nav-pills nav-stacked">
-                        <li className="active"><a href="#"><i className="fa fa-inbox"></i> Reçus
-                          <span className="label label-primary pull-right">12</span></a></li>
+                        <li className="active">
+                          <Link
+                            to="/mailbox">
+                            <i className="fa fa-inbox"></i>
+                             Reçus
+                             <span className="label label-primary pull-right">12</span>
+                          </Link>
+                        </li>
                         <li><a href="#"><i className="fa fa-envelope-o"></i> Envoyés</a></li>
                         <li><a href="#"><i className="fa fa-file-text-o"></i> Brouillons</a></li>
                         <li><a href="#"><i className="fa fa-trash-o"></i> Corbeille</a></li>
