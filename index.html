@@ -10,7 +10,7 @@
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <style media="screen">
-    .loader {
+    /*.loader {
     	position: fixed;
     	left: 0px;
     	top: 0px;
@@ -18,7 +18,7 @@
     	height: 100%;
     	z-index: 9999;
     	background: url('./public/img/loading.gif') 50% 50% no-repeat rgb(255,255,255);
-    }
+    }*/
     </style>
   </head>
   <body
@@ -31,22 +31,22 @@
     </div>
     <script type="text/javascript" src="./public/assets/bundle.js"></script>
     <script type="text/javascript">
-    ;(function(){
-      document.addEventListener("DOMContentLoaded", function(event) {
-        var el = document.querySelector('.loader');
-        fadeOut(el);
-      });
-      function fadeOut(el){
-        el.style.opacity = 1;
-        (function fade() {
-          if ((el.style.opacity -= .1) < 0.15) {
-            el.style.display = "none";
-          } else {
-            requestAnimationFrame(fade);
-          }
-        })();
-      }
-    })()
+    // ;(function(){
+    //   document.addEventListener("DOMContentLoaded", function(event) {
+    //     var el = document.querySelector('.loader');
+    //     fadeOut(el);
+    //   });
+    //   function fadeOut(el){
+    //     el.style.opacity = 1;
+    //     (function fade() {
+    //       if ((el.style.opacity -= .1) < 0.15) {
+    //         el.style.display = "none";
+    //       } else {
+    //         requestAnimationFrame(fade);
+    //       }
+    //     })();
+    //   }
+    // })()
     </script>
   </body>
 </html>
