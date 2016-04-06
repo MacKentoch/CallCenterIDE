@@ -1,4 +1,5 @@
 import React      from 'react';
+import { Link }   from 'react-router';
 import {
   ViewHeader,
   ViewFooter
@@ -17,21 +18,29 @@ class Mailbox extends React.Component {
             <section className="content">
               <div className="row">
                 <div className="col-md-3">
-                  <a href="compose.html" className="btn btn-primary btn-block margin-bottom">Nouveau message électronique</a>
-
+                  <Link
+                    to="/compose"
+                    className="btn btn-primary btn-block margin-bottom">
+                    Nouveau message électronique
+                  </Link>
                   <div className="box box-solid">
                     <div className="box-header with-border">
                       <h3 className="box-title">Répertoires</h3>
-
                       <div className="box-tools">
-                        <button type="button" className="btn btn-box-tool" data-widget="collapse"><i className="fa fa-minus"></i>
+                        <button type="button" className="btn btn-box-tool" data-widget="collapse">
+                          <i className="fa fa-minus"></i>
                         </button>
                       </div>
                     </div>
                     <div className="box-body no-padding">
                       <ul className="nav nav-pills nav-stacked">
-                        <li className="active"><a href="#"><i className="fa fa-inbox"></i> Reçus
-                          <span className="label label-primary pull-right">12</span></a></li>
+                        <li className="active">
+                          <a href="#">
+                            <i className="fa fa-inbox"></i>
+                             Reçus
+                          <span className="label label-primary pull-right">12</span>
+                          </a>
+                        </li>
                         <li><a href="#"><i className="fa fa-envelope-o"></i> Envoyés</a></li>
                         <li><a href="#"><i className="fa fa-file-text-o"></i> Brouillons</a></li>
                         <li><a href="#"><i className="fa fa-trash-o"></i> Corbeille</a></li>
