@@ -8,6 +8,5 @@ export {
   Header,
   Aside,
   ViewHeader,
-  ViewFooter,
-  TextEditor
+  ViewFooter
 };

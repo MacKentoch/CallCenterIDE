@@ -25439,7 +25439,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.TextEditor = exports.ViewFooter = exports.ViewHeader = exports.Aside = exports.Header = undefined;
+	exports.ViewFooter = exports.ViewHeader = exports.Aside = exports.Header = undefined;
 
 	var _Header = __webpack_require__(225);
 
@@ -25455,7 +25455,6 @@
 	exports.Aside = _Aside.Aside;
 	exports.ViewHeader = _ViewHeader.ViewHeader;
 	exports.ViewFooter = _ViewFooter.ViewFooter;
-	exports.TextEditor = TextEditor;
 
 /***/ },
 /* 225 */
