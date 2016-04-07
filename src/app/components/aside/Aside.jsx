@@ -1,5 +1,35 @@
 import React    from 'react';
 import { Link } from 'react-router';
+import SideMenu from './sideMenu/SideMenu.jsx';
+
+const DASHBOARD_MENU = {
+  title:  'Tableau de bord',
+  linkTo: '/',
+  faIcon: 'fa-dashboard',
+  subMenus: [
+    {
+      title:  'Accueil',
+      linkTo: '/'
+    }
+  ]
+};
+
+const CONTACTS_MENU = {
+  title:  'Contacts',
+  linkTo: '/contacts',
+  faIcon: 'fa-user',
+  subMenus: [
+    {
+      title:  'Contacts',
+      linkTo: '/constacts'
+    },
+    {
+      title:  'recherche',
+      linkTo: '/rechcontact'
+    }
+  ]
+};
+
 
 export const Aside = () => {
   return (
@@ -28,23 +58,22 @@ export const Aside = () => {
           <li className="header">
             NAVIGATION PRINCIPALE
           </li>
-          <li className="active treeview">
-            <Link to="/">
-              <i className="fa fa-dashboard"></i>
-                <span>
-                  Tableau de bord
-                </span>
-                <i className="fa fa-angle-left pull-right"></i>
-            </Link>
-            <ul className="treeview-menu">
-              <li className="active">
-                <Link to="/">
-                  <i className="fa fa-circle-o"></i>
-                   Accueil
-                </Link>
-              </li>
-            </ul>
-          </li>
+          {
+            <SideMenu
+              title={DASHBOARD_MENU.title}
+              faIcon={DASHBOARD_MENU.faIcon}
+              linkTo={DASHBOARD_MENU.linkTo}
+              subMenus={DASHBOARD_MENU.subMenus}
+            />
+          }
+          {
+            <SideMenu
+              title={CONTACTS_MENU.title}
+              faIcon={CONTACTS_MENU.faIcon}
+              linkTo={CONTACTS_MENU.linkTo}
+              subMenus={CONTACTS_MENU.subMenus}
+            />
+          }
           <li>
             <Link to="/mailbox">
               <i className="fa fa-envelope"></i>
@@ -70,3 +99,23 @@ export const Aside = () => {
     </aside>
   );
 };
+
+
+//
+// <li className="active treeview">
+//   <Link to="/">
+//     <i className="fa fa-dashboard"></i>
+//       <span>
+//         Tableau de bord
+//       </span>
+//       <i className="fa fa-angle-left pull-right"></i>
+//   </Link>
+//   <ul className="treeview-menu">
+//     <li className="active">
+//       <Link to="/">
+//         <i className="fa fa-circle-o"></i>
+//          Accueil
+//       </Link>
+//     </li>
+//   </ul>
+// </li>
