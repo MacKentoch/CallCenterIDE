@@ -13,7 +13,7 @@ class Readmail extends React.Component {
   render() {
     return(
       <div>
-        <div className="content-wrapper">
+        <div>
           <ViewHeader />
             <section className="content">
               <div className="row">
@@ -143,7 +143,6 @@ class Readmail extends React.Component {
               </div>
             </section>
         </div>
-        <ViewFooter />
       </div>
     );
   }

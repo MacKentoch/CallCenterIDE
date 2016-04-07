@@ -12,7 +12,7 @@ class LastFiche extends React.Component {
   render() {
     return(
       <div>
-        <div className="content-wrapper">
+        <div>
           <ViewHeader />
             <section className="invoice">
               <div className="row">
@@ -122,7 +122,6 @@ class LastFiche extends React.Component {
             </section>
             <div className="clearfix"></div>
         </div>
-        <ViewFooter />
       </div>
     );
   }

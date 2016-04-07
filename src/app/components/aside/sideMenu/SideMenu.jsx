@@ -29,7 +29,7 @@ const SideMenu = (props) => {
   );
 };
 
-SideMenu.propTypes  ={
+SideMenu.propTypes = {
   title:    React.PropTypes.string.isRequired,
   linkTo:   React.PropTypes.string.isRequired,
   faIcon:   React.PropTypes.string,

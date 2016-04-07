@@ -17,9 +17,10 @@ class App extends React.Component {
         <Header />
         <Aside />
         <div className="control-sidebar-bg"></div>
-        <div>
+        <div className="content-wrapper">
           {this.props.children}
         </div>
+        <ViewFooter />
       </div>
     );
   }
