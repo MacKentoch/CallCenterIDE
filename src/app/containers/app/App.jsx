@@ -15,7 +15,7 @@ class App extends React.Component {
     return (
       <div>
         <Header />
-        <Aside />
+        <Aside /> 
         <div className="control-sidebar-bg"></div>
         <div className="content-wrapper">
           {this.props.children}
