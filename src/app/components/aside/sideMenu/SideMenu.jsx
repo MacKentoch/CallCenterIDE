@@ -3,11 +3,10 @@ import { Link }       from 'react-router';
 import SideMenuItem   from './SideMenuItem.jsx';
 
 const SideMenu = (props) => {
-  const icon = `fa ${props.faIcon}`;
   return (
-    <li className="active treeview">
+    <li className={`treeview ${props.isActive ? 'active' : ''}`}>
       <Link to={props.linkTo}>
-        <i className={icon}></i>
+        <i className={`fa ${props.faIcon}`}></i>
           <span>
             {props.title}
           </span>
@@ -34,6 +33,7 @@ SideMenu.propTypes  ={
   title:    React.PropTypes.string.isRequired,
   linkTo:   React.PropTypes.string.isRequired,
   faIcon:   React.PropTypes.string,
+  isActive: React.PropTypes.bool,
   subMenus: React.PropTypes.arrayOf(React.PropTypes.shape({
     title:    React.PropTypes.string.isRequired,
     linkTo:   React.PropTypes.string.isRequired,
@@ -42,7 +42,8 @@ SideMenu.propTypes  ={
 };
 
 SideMenu.defaultProps = {
-  faIcon: ''
+  faIcon:   '',
+  isActive: false
 };
 
 export default SideMenu;

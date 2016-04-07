@@ -5,12 +5,12 @@ import SideMenu from './sideMenu/SideMenu.jsx';
 const DASHBOARD_MENU = {
   title:  'Tableau de bord',
   linkTo: '/',
-  faIcon: 'fa-dashboard',
+  faIcon: 'fa-caret-right',
   subMenus: [
     {
       title:  'Accueil',
       linkTo: '/',
-      faIcon: 'fa-dashboard',
+      faIcon: 'fa-dashboard'
     }
   ]
 };
@@ -18,7 +18,7 @@ const DASHBOARD_MENU = {
 const CONTACTS_MENU = {
   title:  'Contacts',
   linkTo: '/contacts',
-  faIcon: 'fa-user',
+  faIcon: 'fa-caret-right',
   subMenus: [
     {
       title:  'Contacts',
