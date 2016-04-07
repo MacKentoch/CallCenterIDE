@@ -9,7 +9,8 @@ const DASHBOARD_MENU = {
   subMenus: [
     {
       title:  'Accueil',
-      linkTo: '/'
+      linkTo: '/',
+      faIcon: 'fa-dashboard',
     }
   ]
 };
@@ -21,11 +22,13 @@ const CONTACTS_MENU = {
   subMenus: [
     {
       title:  'Contacts',
-      linkTo: '/constacts'
+      linkTo: '/constacts',
+      faIcon: 'fa-user'
     },
     {
       title:  'recherche',
-      linkTo: '/rechcontact'
+      linkTo: '/rechcontact',
+      faIcon: 'fa-search'
     }
   ]
 };
@@ -99,23 +102,3 @@ export const Aside = () => {
     </aside>
   );
 };
-
-
-//
-// <li className="active treeview">
-//   <Link to="/">
-//     <i className="fa fa-dashboard"></i>
-//       <span>
-//         Tableau de bord
-//       </span>
-//       <i className="fa fa-angle-left pull-right"></i>
-//   </Link>
-//   <ul className="treeview-menu">
-//     <li className="active">
-//       <Link to="/">
-//         <i className="fa fa-circle-o"></i>
-//          Accueil
-//       </Link>
-//     </li>
-//   </ul>
-// </li>

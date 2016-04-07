@@ -20,6 +20,7 @@ const SideMenu = (props) => {
               <SideMenuItem
                 key={index}
                 title={menuItem.title}
+                faIcon={menuItem.faIcon}
                 linkTo={menuItem.linkTo}
               />
             );
@@ -35,7 +36,8 @@ SideMenu.propTypes  ={
   faIcon:   React.PropTypes.string,
   subMenus: React.PropTypes.arrayOf(React.PropTypes.shape({
     title:    React.PropTypes.string.isRequired,
-    linkTo:   React.PropTypes.string.isRequired
+    linkTo:   React.PropTypes.string.isRequired,
+    faIcon:   React.PropTypes.string.isRequired
   }))
 };
 
