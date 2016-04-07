@@ -43,7 +43,7 @@ SideMenu.propTypes = {
 
 SideMenu.defaultProps = {
   faIcon:   '',
-  isActive: false
+  isActive: true
 };
 
 export default SideMenu;
