@@ -128,45 +128,6 @@ class Readmail extends React.Component {
                                 </span>
                           </div>
                         </li>
-                        <li>
-                          <span className="mailbox-attachment-icon"><i className="fa fa-file-word-o"></i></span>
-
-                          <div className="mailbox-attachment-info">
-                            <a href="#" className="mailbox-attachment-name"><i className="fa fa-paperclip"></i> App Description.docx</a>
-                                <span className="mailbox-attachment-size">
-                                  1,245 KB
-                                  <a href="#" className="btn btn-default btn-xs pull-right"><i className="fa fa-cloud-download"></i></a>
-                                </span>
-                          </div>
-                        </li>
-                        <li>
-                          <span className="mailbox-attachment-icon has-img">
-                            <img src="../../dist/img/photo1.png" alt="Attachment" />
-                          </span>
-                          <div className="mailbox-attachment-info">
-                            <a href="#" className="mailbox-attachment-name">
-                              <i className="fa fa-camera"></i>
-                               photo1.png
-                             </a>
-                                <span className="mailbox-attachment-size">
-                                  2.67 MB
-                                  <a href="#" className="btn btn-default btn-xs pull-right">
-                                    <i className="fa fa-cloud-download"></i>
-                                  </a>
-                                </span>
-                          </div>
-                        </li>
-                        <li>
-                          <span className="mailbox-attachment-icon has-img"><img src="../../dist/img/photo2.png" alt="Attachment" /></span>
-
-                          <div className="mailbox-attachment-info">
-                            <a href="#" className="mailbox-attachment-name"><i className="fa fa-camera"></i> photo2.png</a>
-                                <span className="mailbox-attachment-size">
-                                  1.9 MB
-                                  <a href="#" className="btn btn-default btn-xs pull-right"><i className="fa fa-cloud-download"></i></a>
-                                </span>
-                          </div>
-                        </li>
                       </ul>
                     </div>
                     <div className="box-footer">
