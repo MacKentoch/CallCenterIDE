@@ -1,6 +1,7 @@
-import React from 'react';
+import React    from 'react';
+import { Link } from 'react-router';
 
-export const Header = () => {  
+export const Header = () => {
   return (
     <header className="main-header">
       <a href="#" className="logo">
@@ -69,7 +70,11 @@ export const Header = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="footer"><a href="#">Voir tous les messages</a></li>
+                <li className="footer">
+                  <Link to="/mailbox">
+                    Voir tous les messages
+                  </Link>
+                </li>
               </ul>
             </li>
             <li className="dropdown notifications-menu">

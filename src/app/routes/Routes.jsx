@@ -7,13 +7,6 @@ import {
   // browserHistory
 }                   from 'react-router';
 import App          from '../containers/app/App.jsx';
-// import {
-//   Dashboard,
-//   LastFiche,
-//   Compose,
-//   Mailbox,
-//   Readmail
-// }                   from '../views/index.js';
 
 import {
   Dashboard,
